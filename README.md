@@ -1,1 +1,1 @@
-nimadir yozdim
+yangi branch and rebase
