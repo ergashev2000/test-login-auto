@@ -1,6 +1,3 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
 class test extends Component {
   constructor(props) {
     super(props);
@@ -49,3 +46,9 @@ test.propTypes = {
 };
 
 export default test;
+=======
+export default function test() {
+  return (
+    <div>test</div>
+  )
+}
