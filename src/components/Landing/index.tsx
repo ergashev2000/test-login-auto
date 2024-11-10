@@ -1,7 +1,1 @@
-import React from 'react'
-
-export default function index() {
-  return (
-    <div>index</div>
-  )
-}
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nulla et, accusamus aperiam fugiat magnam laboriosam nesciunt neque laudantium placeat culpa deleniti aliquam illum esse odit unde tempora sed. Consequuntur?"
