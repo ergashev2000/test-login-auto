@@ -1,3 +1,1 @@
-##asdasdas #dasdas
-
-adasdasd#asdas
+nimadir yozdim
