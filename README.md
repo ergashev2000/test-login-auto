@@ -1,7 +1,1 @@
-##
-
-
-### Yangi tandir
-
-
-### nimadirda
+nimadir yozdim
