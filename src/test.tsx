@@ -1,54 +1,10 @@
-class test extends Component {
-  constructor(props) {
-    super(props);
+import React from 'react'
 
-  }
-
-  componentWillMount() {
-
-  }
-
-  componentDidMount() {
-
-  }
-
-  componentWillReceiveProps(nextProps) {
-
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-
-  }
-
-  componentWillUnmount() {
-
-  }
-
-  render() {
-    return (
-      <div>
-
-      </div>
-    );
-  }
-}
-
-test.propTypes = {
-
-};
-
-export default test;
-=======
 export default function test() {
   return (
-    <div>test</div>
+    <div>
+      lreom
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora temporibus, aliquid molestias perspiciatis cupiditate, mollitia blanditiis quibusdam facilis dolore fugit aut dolores facere laboriosam vitae doloribus nulla dolorem. Perspiciatis, cum!
+    </div>
   )
 }
