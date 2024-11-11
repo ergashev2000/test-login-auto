@@ -3,7 +3,7 @@ name: Deploy to VPS
 on:
   push:
     branches:
-      - master
+      - master  # Trigger on push to the 'master' branch
 
 jobs:
   deploy:
@@ -25,14 +25,17 @@ jobs:
         run: npm run build
 
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@v0.1.0
+        uses: appleboy/ssh-action@v0.1.4  # Use the latest version of the action
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
+            # Copy build files to the VPS
+            rm -rf /react/dist  # Optional: Clear existing build directory
+            cp -r ./build /react/dist  # Copy new build files
             cd /reactapp
-            git pull origin master
-            npm install
-            pm2 restart app
+            npm install  # Install dependencies
+            pm2 restart app  # Restart app via PM2
+
